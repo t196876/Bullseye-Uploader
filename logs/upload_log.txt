@@ -1,0 +1,201 @@
+2025-10-08 00:00:09 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:00:42 [ERROR] \u274c Login failed: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("button:has-text(\"Login\")")
+
+2025-10-08 00:03:36 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:03:42 [INFO] \u2705 Login successful.
+2025-10-08 00:03:42 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:04:13 [ERROR] \u274c Failed to open KPM Pipeline Tracker: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("text=\"KPM Pipeline Tracker\"")
+
+2025-10-08 00:08:30 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:08:36 [INFO] \u2705 Login successful.
+2025-10-08 00:08:36 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:09:07 [ERROR] \u274c Failed to open KPM Pipeline Tracker: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.dhtmlBottom:has-text(\"KPM Pipeline Tracker\")")
+
+2025-10-08 00:10:13 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:10:19 [INFO] \u2705 Login successful.
+2025-10-08 00:10:24 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:10:50 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:11:20 [ERROR] \u274c Failed for KPM_ID 155222: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[aria-label=\"Search\"]")
+
+2025-10-08 00:11:20 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:11:20 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:12:34 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:12:36 [ERROR] \u274c Login failed: 'Page' object has no attribute 'keyword'
+2025-10-08 00:12:59 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:13:06 [INFO] \u2705 Login successful.
+2025-10-08 00:13:11 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:13:41 [ERROR] \u274c Failed to open KPM Pipeline Tracker: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.dhtmlBottom:has-text(\"KPM Pipeline Tracker\")")
+
+2025-10-08 00:16:42 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:16:48 [INFO] \u2705 Login successful.
+2025-10-08 00:16:53 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:17:05 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:17:35 [ERROR] \u274c Failed for KPM_ID 155222: Page.fill: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[aria-label=\"Search\"]")
+
+2025-10-08 00:17:35 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:17:35 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:22:45 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:22:51 [INFO] \u2705 Login successful.
+2025-10-08 00:22:56 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:23:09 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:23:43 [ERROR] \u274c Failed for KPM_ID 155222: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("text=\"155222\"")
+    - locator resolved to 4 elements. Proceeding with the first one: <span class="a-IRR-reportSummary-value">155222</span>
+  - attempting click action
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+    - waiting 20ms
+    2 × waiting for element to be visible, enabled and stable
+      - element is not visible
+    - retrying click action
+      - waiting 100ms
+    38 × waiting for element to be visible, enabled and stable
+       - element is not visible
+     - retrying click action
+       - waiting 500ms
+
+2025-10-08 00:23:43 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:23:43 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:27:27 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:27:33 [INFO] \u2705 Login successful.
+2025-10-08 00:27:38 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:27:51 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:28:25 [ERROR] \u274c Failed for KPM_ID 155222: Page.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("a.a-IRR-reportSummary-value:has-text(\"kpm_id\")")
+
+2025-10-08 00:28:25 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:28:25 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:33:17 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:33:23 [INFO] \u2705 Login successful.
+2025-10-08 00:33:28 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:33:40 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:34:13 [ERROR] \u274c Failed for KPM_ID 155222: Page.wait_for_selector: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("td a:has-text(\"kpm_id\")") to be visible
+
+2025-10-08 00:34:13 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:34:13 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:37:50 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:37:56 [INFO] \u2705 Login successful.
+2025-10-08 00:38:02 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:38:15 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:39:06 [ERROR] \u274c Failed for KPM_ID 155222: Page.check: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("input[value=\"Static Divisional Offer\"]")
+
+2025-10-08 00:39:06 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:39:06 [INFO] \u2705 Process completed successfully.
+2025-10-08 00:45:42 [INFO] \U0001f510 Logging into Bullseye...
+2025-10-08 00:45:48 [INFO] \u2705 Login successful.
+2025-10-08 00:45:53 [INFO] \U0001f4c2 Opening KPM Pipeline Tracker...
+2025-10-08 00:46:06 [INFO] \u27a1\ufe0f Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 00:46:27 [INFO] \u2705 Offer Type 'Static Divisional Offer' selected.
+2025-10-08 00:46:58 [ERROR] \u274c Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 00:46:58 [INFO] \U0001f4ca Summary report saved to results/upload_summary.csv
+2025-10-08 00:46:58 [INFO] \u2705 Process completed successfully.
+2025-10-08 14:17:56 [INFO] Logging into BE
+2025-10-08 14:18:04 [INFO] Log-in successful
+2025-10-08 14:18:09 [INFO] opening KPM Pipeline Tracker
+2025-10-08 14:18:26 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 14:18:50 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 14:19:21 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 14:19:21 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 14:19:21 [INFO] Process completed successfully.
+2025-10-08 15:06:34 [INFO] Logging into BE
+2025-10-08 15:06:40 [INFO] Log-in successful
+2025-10-08 15:06:45 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:07:00 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:07:24 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:07:54 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:07:54 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:07:54 [INFO] Process completed successfully.
+2025-10-08 15:23:39 [INFO] Logging into BE
+2025-10-08 15:23:45 [INFO] Log-in successful
+2025-10-08 15:23:50 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:24:02 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:24:22 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:24:53 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:24:53 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:24:53 [INFO] Process completed successfully.
+2025-10-08 15:30:05 [INFO] Logging into BE
+2025-10-08 15:30:11 [INFO] Log-in successful
+2025-10-08 15:30:16 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:30:30 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:30:51 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:31:21 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:31:21 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:31:21 [INFO] Process completed successfully.
+2025-10-08 15:32:14 [INFO] Logging into BE
+2025-10-08 15:32:20 [INFO] Log-in successful
+2025-10-08 15:32:25 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:32:37 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:32:58 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:33:29 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:33:29 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:33:29 [INFO] Process completed successfully.
+2025-10-08 15:35:22 [INFO] Logging into BE
+2025-10-08 15:35:28 [INFO] Log-in successful
+2025-10-08 15:35:33 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:35:45 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:36:06 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:36:37 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:36:37 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:36:37 [INFO] Process completed successfully.
+2025-10-08 15:37:46 [INFO] Logging into BE
+2025-10-08 15:37:52 [INFO] Log-in successful
+2025-10-08 15:37:57 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:38:08 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:38:28 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:38:58 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:38:58 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:38:58 [INFO] Process completed successfully.
+2025-10-08 15:41:57 [INFO] Logging into BE
+2025-10-08 15:42:04 [INFO] Log-in successful
+2025-10-08 15:42:09 [INFO] opening KPM Pipeline Tracker
+2025-10-08 15:42:21 [INFO] Processing KPM_ID: 155222 | Offer Type: static
+2025-10-08 15:42:40 [INFO] Offer Type 'Static Divisional Offer' selected.
+2025-10-08 15:43:11 [ERROR] Failed for KPM_ID 155222: Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("#BOM_FILE_BROWSER")
+
+2025-10-08 15:43:11 [INFO] Summary report saved to results/upload_summary.csv
+2025-10-08 15:43:11 [INFO] Process completed successfully.
