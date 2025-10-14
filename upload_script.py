@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 import os
 from datetime import datetime
 from openpyxl import load_workbook
-
+import openpyxl
+from cleaner import clean_excel_dates
 # CONFIGURATION
 
 
@@ -44,56 +45,62 @@ from openpyxl import load_workbook
 
 from datetime import datetime
 
-def clean_excel_date_cells(excel_path):
+#def clean_excel_date_cells(excel_path):
 
-    """Remove leading/trailing spaces from cells that are date-like (text or Excel date)."""
+ #   """Remove leading/trailing spaces from cells that are date-like (text or Excel date)."""
 
-    wb = load_workbook(excel_path)
+  #  wb = openpyxl.load_workbook(excel_path)
 
-    sheet = wb.active
-
-    print("Checking for extra spaces in date-like cells...")
-
-    count = 0
-
-    for row in sheet.iter_rows():
-
-        for cell in row:
-
-            val = cell.value
-
-            # --- CASE 1: Text date (e.g., " 10/10/25 ")
-
-            if isinstance(val, str) and any(x in val for x in ["/", "-"]):
-
-                cleaned = val.strip()
-
-                if cleaned != val:
-
-                    print(f"🗓️ Cleaned text date: '{val}' → '{cleaned}'")
-
-                    cell.value = cleaned
-
-                    count += 1
-
-            # --- CASE 2: Excel-stored date that was imported as string with padding
-
-            elif isinstance(val, datetime):
-
-                # Sometimes the cell has spaces due to formatting → convert to standard date format
-
-                cell.number_format = "mm/dd/yy"
-
-                count += 1
-
-    wb.save(excel_path)
-
-    print(f"Cleaning complete. Total date-like cells fixed: {count}")
- 
+   # ws = wb.active
+#    #date_pattern = re.compile(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b")
+#    print("Checking for extra spaces in date-like cells...")
+#
+#    cleaned = 0
+#
+#    for row in ws.iter_rows():
+#
+#        for cell in row:
+#
+#           # val = cell.value
+#
+#            # --- CASE 1: Text date (e.g., " 10/10/25 ")
+#
+#            if isinstance(cell.value,str):    #(val, str) and any(x in val for x in ["/", "-"]):
+#
+#                #    cleaned = val.strip()
+#                original = cell.value 
+#                stripped = original.strip()
+#                if stripped != original and date_pattern.search(stripped):
+#                    cell.value = stripped
+#                    cleaned +=1   
+#                #if cleaned != val:
+#
+#                    print(f"🗓️ Cleaned text date: '{original}' → '{stripped}'")
+#
+#                    #cell.value = cleaned
+#
+#                    #count += 1
+#
+#            # --- CASE 2: Excel-stored date that was imported as string with padding
+#
+#    if cleaned == 0: 
+#                print("no spaces")# (val, datetime):
+#    else:
+#                print("done spaces removed")
+#                # Sometimes the cell has spaces due to formatting → convert to standard date format
+#
+#               # cell.number_format = "mm/dd/yy"
+#
+#               # count += 1
+#
+#    wb.save(excel_path)
+#
+#    #print(f"Cleaning complete. Total date-like cells fixed: {count}")
+# 
 
 
 async def run_upload():
-    clean_excel_date_cells(EXCEL_PATH)
+    clean_excel_dates(EXCEL_PATH)
     df = pd.read_excel(EXCEL_PATH)
 
     summary = []
