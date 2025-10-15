@@ -4,58 +4,48 @@ import re
 
 import openpyxl
 FILE_PATH = "metadata\13190.xlsx"
-def clean_excel_dates(EXCEL_PATH):
+import openpyxl
 
+from datetime import datetime
+
+def clean_excel_dates(file_path):
     """
-
-    Removes leading/trailing spaces from date-like cells in Excel.
-
-    Only modifies cells that look like dates (dd/mm/yy or mm/dd/yyyy).
-
+    Cleans Excel file by:
+    1. Removing extra spaces around text-based dates.
+    2. Converting datetime-type cells to 'MM/DD/YY' format.
+    Logs all changes.
     """
-
     try:
-
-        wb = openpyxl.load_workbook(EXCEL_PATH)
-
+        wb = openpyxl.load_workbook(file_path)
         ws = wb.active
-
-        date_pattern = re.compile(r"\b\d{1,2}/\d{1,2}/\d{2,4}\b")
-
-        cleaned = 0
+        cleaned_count = 0
 
         for row in ws.iter_rows():
-
             for cell in row:
+                val = cell.value
 
-                if isinstance(cell.value, str):
+                # Handle datetime-type cells
+                if isinstance(val, datetime):
+                    formatted = val.strftime("%m/%d/%y")
+                    if cell.value != formatted:
+                        print(f"Normalized date: {val} → {formatted}")
+                        cell.value = formatted
+                        cleaned_count += 1
 
-                    original = cell.value
+                # Handle string cells
+                elif isinstance(val, str):
+                    cleaned = val.strip()
+                    if cleaned != val:
+                        print(f"Removed extra spaces: '{val}' → '{cleaned}'")
+                        cell.value = cleaned
+                        cleaned_count += 1
 
-                    stripped = original.strip()
-
-                    # Check if cell value looks like a date and has extra spaces
-
-                    if stripped != original and date_pattern.search(stripped):
-
-                        cell.value = stripped
-
-                        cleaned += 1
-
-                        print(f" Cleaned: '{original}' → '{stripped}'")
-
-        if cleaned == 0:
-
-            print(" No date cells had extra spaces.")
-
-        else:
-            print(f" {cleaned} date cells cleaned successfully.")
-
-        wb.save(EXCEL_PATH)
-
+        wb.save(file_path)
         wb.close()
+        print(f"\nCleaning complete. Total cells updated: {cleaned_count}\n")
 
     except Exception as e:
+        print(f"Error while cleaning Excel file: {e}")
 
-        print(f" Error while cleaning Excel file: {e}")
- 
+# Example usage
+clean_excel_dates("metadata/13190.xlsx")
