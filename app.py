@@ -18,7 +18,7 @@ def clean_excel_spaces(excel_path, log_box):
             if isinstance(val, str) and any(x in val for x in ["/", "-"]):
                 cleaned = val.strip()
                 if cleaned != val:
-                    log_box.insert(tk.END, f"🧹 Cleaned date: '{val}' → '{cleaned}'\n")
+                    log_box.insert(tk.END, f"Cleaned date: '{val}' → '{cleaned}'\n")
                     cell.value = cleaned
                     count += 1
 

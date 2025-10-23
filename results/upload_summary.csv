@@ -1,5 +1,13 @@
 KPM_ID,File,Status,Timestamp
-155222,T:\TDO\Data Operations\WNS\Campaign Team Docs\KM+\KM+\Strata metadata uploading\test,"Failed - Page.set_input_files: Timeout 30000ms exceeded.
+155222,C:\Users\t196876\Documents\bullseye_uploader\test\13190_155222.xlsx,"Failed - Page.set_input_files: Timeout 30000ms exceeded.
 Call log:
   - waiting for locator(""#BOM_FILE_BROWSER"")
-",2025-10-15 19:48:24
+",2025-10-21 23:20:05
+156142,C:\Users\t196876\Documents\bullseye_uploader\test\13195_156142.xlsx,"Failed - Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(""#BOM_FILE_BROWSER"")
+",2025-10-21 23:21:27
+156140,C:\Users\t196876\Documents\bullseye_uploader\test\13196_156140.xlsx,"Failed - Page.set_input_files: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator(""#BOM_FILE_BROWSER"")
+",2025-10-21 23:22:51
